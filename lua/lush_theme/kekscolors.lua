@@ -112,7 +112,7 @@ local theme = lush(function(injected_functions)
     CursorLineNr { fg = nord_polar_night_4 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     -- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
-    MatchParen { fg = nord_polar_night_1, bg = Normal },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    -- MatchParen { fg = nord_polar_night_1, bg = Normal },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
