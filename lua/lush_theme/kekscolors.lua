@@ -158,19 +158,19 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment { fg = nord_frost_4 },              -- Any comment
+    Comment { fg = nord_frost_4 }, -- Any comment
 
-    Constant { fg = nord_aurora_yellow },       -- (*) Any constant
+    Constant { Normal },           -- (*) Any constant
     -- String         { }, --   A string constant: "this is a string"
     -- Character      { }, --   A character constant: 'c', '\n'
     -- Number         { }, --   A number constant: 234, 0xff
     -- Boolean        { }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
-    -- Identifier     { }, -- (*) Any variable name
+    Identifier { Normal },     -- (*) Any variable name
     -- Function       { }, --   Function name (also: methods for classes)
 
-    Statement { fg = nord_aurora_yellow }, -- (*) Any statement
+    Statement { Normal }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
@@ -178,18 +178,18 @@ local theme = lush(function(injected_functions)
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
-    PreProc { fg = nord_aurora_yellow }, -- (*) Generic Preprocessor
+    PreProc { Normal }, -- (*) Generic Preprocessor
     -- Include        { }, --   Preprocessor #include
     -- Define         { }, --   Preprocessor #define
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type { fg = nord_aurora_yellow }, -- (*) int, long, char, etc.
+    Type { Normal }, -- (*) int, long, char, etc.
     -- StorageClass   { }, --   static, register, volatile, etc.
     -- Structure      { }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
 
-    Special { fg = nord_aurora_yellow }, -- (*) Any special symbol
+    Special { Normal }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
     -- Delimiter      { }, --   Character that needs attention
