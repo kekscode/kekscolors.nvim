@@ -112,13 +112,13 @@ local theme = lush(function(injected_functions)
     CursorLineNr { fg = nord_polar_night_4 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     -- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
-    MatchParen { bg = nord_aurora_red, reverse = true },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen { fg = nord_polar_night_1, bg = Normal },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     -- MoreMsg        { }, -- |more-prompt|
     NonText { fg = nord_frost_4 },     -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal { fg = nord_snow_storm_3 }, -- Normal text
+    Normal { fg = nord_snow_storm_1 }, -- Normal text
     NormalFloat { Normal },            -- Normal text in floating windows.
     FloatBorder { Normal },            -- Border of floating windows.
     FloatTitle { Normal },             -- Title of floating windows.
