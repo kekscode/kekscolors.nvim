@@ -45,6 +45,24 @@
 local lush = require('lush')
 local hsl = lush.hsl
 
+-- https://www.nordtheme.com/docs/colors-and-palettes
+local nord_polar_night_1 = hsl(220, 16, 22)
+local nord_polar_night_2 = hsl(222, 16, 28)
+local nord_polar_night_3 = hsl(220, 17, 32)
+local nord_polar_night_4 = hsl(220, 16, 36)
+local nord_snow_storm_1 = hsl(219, 28, 88)
+local nord_snow_storm_2 = hsl(218, 27, 92)
+local nord_snow_storm_3 = hsl(218, 27, 94)
+local nord_frost_1 = hsl(179, 25, 65)
+local nord_frost_2 = hsl(193, 43, 67)
+local nord_frost_3 = hsl(210, 34, 63)
+local nord_frost_4 = hsl(213, 32, 52)
+local nord_aurora_red = hsl(354, 42, 56)
+local nord_aurora_orange = hsl(14, 51, 63)
+local nord_aurora_yellow = hsl(40, 71, 73)
+local nord_aurora_green = hsl(92, 28, 65)
+local nord_aurora_purple = hsl(311, 20, 63)
+
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
 ---@diagnostic disable: undefined-global
@@ -286,7 +304,7 @@ local theme = lush(function(injected_functions)
     -- sym"@preproc"           { }, -- PreProc
     -- sym"@debug"             { }, -- Debug
     -- sym"@tag"               { }, -- Tag
-}
+  }
 end)
 
 -- Return our parsed theme for extension or use elsewhere.
