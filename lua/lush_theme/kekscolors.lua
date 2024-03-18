@@ -83,7 +83,7 @@ local theme = lush(function(injected_functions)
     -- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     -- Cursor         { }, -- Character under the cursor
     Visual { fg = nord_polar_night_1, bg = nord_aurora_green }, -- Visual mode selection
-    VisualNOS { Visual },                                       -- Visual mode selection when vim is "Not Owning the Selection".
+    -- VisualNOS { Visual },                                       -- Visual mode selection when vim is "Not Owning the Selection".
     Search { fg = nord_polar_night_1, bg = nord_snow_storm_1 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     IncSearch { fg = nord_aurora_orange, reverse = true },      -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch { fg = nord_aurora_orange, reverse = true },      -- Highlighting a search pattern under the cursor (see 'hlsearch')
