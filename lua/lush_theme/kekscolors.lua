@@ -145,10 +145,10 @@ local theme = lush(function(injected_functions)
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg { fg = nord_aurora_orange },                     -- Warning messages
     Whitespace { fg = nord_polar_night_1 },                     -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    -- Winseparator   { }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+    Winseparator { fg = nord_frost_4 },                         -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
     -- WildMenu       { }, -- Current match in 'wildmenu' completion
-    WinBar { bg = nord_polar_night_1 },   -- Window bar of current window
-    WinBarNC { bg = nord_polar_night_4 }, -- Window bar of not-current windows
+    -- WinBar { bg = nord_aurora_orange },                         -- Window bar of current window
+    -- WinBarNC { bg = nord_polar_night_4 },                       -- Window bar of not-current windows
 
     -- Common vim syntax groups used for all kinds of code and markup.
     -- Commented-out groups should chain up to their preferred (*) group
@@ -167,8 +167,8 @@ local theme = lush(function(injected_functions)
     -- Boolean        { }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
-    Identifier { fg = nord_aurora_purple }, -- (*) Any variable name
-    Function { fg = nord_aurora_purple },   --   Function name (also: methods for classes)
+    Identifier { fg = nord_frost_3 }, -- (*) Any variable name
+    Function { fg = nord_aurora_green},   --   Function name (also: methods for classes)
 
     Statement { fg = nord_aurora_purple },  -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
