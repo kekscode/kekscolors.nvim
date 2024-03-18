@@ -88,10 +88,10 @@ local theme = lush(function(injected_functions)
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     -- CursorLine     { }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     -- Directory      { }, -- Directory names (and other special names in listings)
-    DiffAdd { fg = nord_aurora_green },                     -- Diff mode: Added line |diff.txt|
-    DiffChange { fg = nord_aurora_orange },                 -- Diff mode: Changed line |diff.txt|
-    DiffDelete { fg = nord_aurora_red },                    -- Diff mode: Deleted line |diff.txt|
-    DiffText { fg = nord_aurora_orange, reverse = true, },  -- Diff mode: Changed text within a changed line |diff.txt|
+    DiffAdd { fg = nord_aurora_green },                    -- Diff mode: Added line |diff.txt|
+    DiffChange { fg = nord_aurora_orange },                -- Diff mode: Changed line |diff.txt|
+    DiffDelete { fg = nord_aurora_red },                   -- Diff mode: Deleted line |diff.txt|
+    DiffText { fg = nord_aurora_orange, reverse = true, }, -- Diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
     -- TermCursor     { }, -- Cursor in a focused terminal
     -- TermCursorNC   { }, -- Cursor in an unfocused terminal
@@ -114,7 +114,7 @@ local theme = lush(function(injected_functions)
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     -- MoreMsg        { }, -- |more-prompt|
     -- NonText        { }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    -- Normal         { }, -- Normal text
+    Normal { fg = nord_snow_storm_3 }, -- Normal text
     -- NormalFloat    { }, -- Normal text in floating windows.
     -- FloatBorder    { }, -- Border of floating windows.
     -- FloatTitle     { }, -- Title of floating windows.
