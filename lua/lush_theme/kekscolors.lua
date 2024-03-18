@@ -168,9 +168,9 @@ local theme = lush(function(injected_functions)
     -- Float          { }, --   A floating point constant: 2.3e10
 
     Identifier { fg = nord_aurora_purple }, -- (*) Any variable name
-    Function { fg = nord_aurora_purple },  --   Function name (also: methods for classes)
+    Function { fg = nord_aurora_purple },   --   Function name (also: methods for classes)
 
-    Statement { Normal },                  -- (*) Any statement
+    Statement { fg = nord_aurora_purple },  -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
@@ -178,18 +178,18 @@ local theme = lush(function(injected_functions)
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
-    PreProc { Normal }, -- (*) Generic Preprocessor
+    PreProc { fg = nord_aurora_purple }, -- (*) Generic Preprocessor
     -- Include        { }, --   Preprocessor #include
     -- Define         { }, --   Preprocessor #define
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type { Normal }, -- (*) int, long, char, etc.
+    Type { fg = nord_aurora_purple }, -- (*) int, long, char, etc.
     -- StorageClass   { }, --   static, register, volatile, etc.
     -- Structure      { }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
 
-    Special { Normal }, -- (*) Any special symbol
+    Special { fg = nord_aurora_purple }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
     -- Delimiter      { }, --   Character that needs attention
