@@ -87,6 +87,7 @@ local theme = lush(function(injected_functions)
     Search { fg = nord_polar_night_1, bg = nord_snow_storm_1 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     IncSearch { fg = nord_aurora_orange, reverse = true },      -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch { fg = nord_aurora_orange, reverse = true },      -- Highlighting a search pattern under the cursor (see 'hlsearch')
+    Substitute { fg = nord_aurora_orange, reverse = true },     -- |:substitute| replacement text highlighting
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -104,7 +105,6 @@ local theme = lush(function(injected_functions)
     -- Folded         { }, -- Line used for closed folds
     -- FoldColumn     { }, -- 'foldcolumn'
     -- SignColumn     { }, -- Column where |signs| are displayed
-    Substitute { bg = nord_aurora_yellow },   -- |:substitute| replacement text highlighting
     LineNr { fg = nord_polar_night_4 },       -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     LineNrAbove { fg = nord_polar_night_4 },  -- Line number for when the 'relativenumber' option is set, above the cursor line
     LineNrBelow { fg = nord_polar_night_4 },  -- Line number for when the 'relativenumber' option is set, below the cursor line
