@@ -161,7 +161,7 @@ local theme = lush(function(injected_functions)
 
     Comment { fg = nord_frost_4 }, -- Any comment
 
-    Constant { fg = Normal },      -- (*) Any constant
+    Constant { Normal },      -- (*) Any constant
     -- String         { }, --   A string constant: "this is a string"
     -- Character      { }, --   A character constant: 'c', '\n'
     -- Number         { }, --   A number constant: 234, 0xff
