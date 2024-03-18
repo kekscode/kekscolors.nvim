@@ -82,13 +82,13 @@ local theme = lush(function(injected_functions)
     -- ColorColumn    { }, -- Columns set with 'colorcolumn'
     -- Conceal        { }, -- Placeholder characters substituted for concealed text (see 'conceallevel')
     -- Cursor         { }, -- Character under the cursor
-    Visual { fg = nord_polar_night_1, bg = nord_aurora_green }, -- Visual mode selection
+    Visual { fg = nord_polar_night_1, bg = nord_aurora_green },  -- Visual mode selection
     -- VisualNOS { Visual },                                       -- Visual mode selection when vim is "Not Owning the Selection".
     Search { fg = nord_polar_night_1, bg = nord_aurora_yellow }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    IncSearch { fg = nord_aurora_orange, reverse = true },      -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
-    CurSearch { fg = nord_aurora_red, reverse = true },         -- Highlighting a search pattern under the cursor (see 'hlsearch')
-    Substitute { fg = nord_aurora_red, reverse = true },        -- |:substitute| replacement text highlighting
-    ScrollView { fg = nord_polar_night_2, reverse = true },     -- scrollbar
+    IncSearch { fg = nord_aurora_orange, reverse = true },       -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    CurSearch { fg = nord_aurora_red, reverse = true },          -- Highlighting a search pattern under the cursor (see 'hlsearch')
+    Substitute { fg = nord_aurora_red, reverse = true },         -- |:substitute| replacement text highlighting
+    ScrollView { fg = nord_polar_night_2, reverse = true },      -- scrollbar
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -112,7 +112,7 @@ local theme = lush(function(injected_functions)
     CursorLineNr { fg = nord_polar_night_4 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     -- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
-    MatchParen { fg = nord_aurora_orange, bg = nord_polar_night_1 },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen { fg = nord_aurora_orange, bg = nord_polar_night_1 }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -161,17 +161,17 @@ local theme = lush(function(injected_functions)
 
     Comment { fg = nord_polar_night_4 }, -- Any comment
 
-    Constant { Normal },                 -- (*) Any constant
+    Constant { fg = nord_snow_storm_1 }, -- (*) Any constant
     -- String         { }, --   A string constant: "this is a string"
     -- Character      { }, --   A character constant: 'c', '\n'
     -- Number         { }, --   A number constant: 234, 0xff
     -- Boolean        { }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
-    Identifier { fg = nord_frost_4 },    -- (*) Any variable name
-    Function { fg = nord_aurora_green }, --   Function name (also: methods for classes)
+    Identifier { fg = nord_frost_4 },      -- (*) Any variable name
+    Function { fg = nord_aurora_green },   --   Function name (also: methods for classes)
 
-    Statement { fg = nord_aurora_red },  -- (*) Any statement
+    Statement { fg = nord_aurora_orange }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
@@ -179,18 +179,18 @@ local theme = lush(function(injected_functions)
     -- Keyword        { }, --   any other keyword
     -- Exception      { }, --   try, catch, throw
 
-    PreProc { fg = nord_aurora_purple }, -- (*) Generic Preprocessor
+    PreProc { Constant }, -- (*) Generic Preprocessor
     -- Include        { }, --   Preprocessor #include
     -- Define         { }, --   Preprocessor #define
     -- Macro          { }, --   Same as Define
     -- PreCondit      { }, --   Preprocessor #if, #else, #endif, etc.
 
-    Type { fg = nord_aurora_purple }, -- (*) int, long, char, etc.
+    Type { Constant }, -- (*) int, long, char, etc.
     -- StorageClass   { }, --   static, register, volatile, etc.
     -- Structure      { }, --   struct, union, enum, etc.
     -- Typedef        { }, --   A typedef
 
-    Special { fg = nord_aurora_purple }, -- (*) Any special symbol
+    Special { Constant }, -- (*) Any special symbol
     -- SpecialChar    { }, --   Special character in a constant
     -- Tag            { }, --   You can use CTRL-] on this
     -- Delimiter      { }, --   Character that needs attention
@@ -199,8 +199,8 @@ local theme = lush(function(injected_functions)
 
     -- Underlined     { gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { }, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
-    Error { fg = nord_aurora_red }, -- Any erroneous construct
-    -- Todo           { }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Error { fg = nord_aurora_red },             -- Any erroneous construct
+    Todo { fg = nord_aurora_yellow },           -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- These groups are for the native LSP client and diagnostic system. Some
     -- other LSP clients may use these groups, or use their own. Consult your
