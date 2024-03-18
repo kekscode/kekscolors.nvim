@@ -171,7 +171,7 @@ local theme = lush(function(injected_functions)
     Identifier { fg = nord_frost_4 },      -- (*) Any variable name
     Function { fg = nord_aurora_green },   --   Function name (also: methods for classes)
 
-    Statement { fg = nord_aurora_orange }, -- (*) Any statement
+    Statement { fg = nord_aurora_red }, -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --   case, default, etc.
