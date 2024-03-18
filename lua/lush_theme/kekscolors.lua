@@ -159,7 +159,7 @@ local theme = lush(function(injected_functions)
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment { fg = nord_frost_4 }, -- Any comment
+    Comment { fg = nord_polar_night_4 }, -- Any comment
 
     Constant { Normal },      -- (*) Any constant
     -- String         { }, --   A string constant: "this is a string"
@@ -168,8 +168,8 @@ local theme = lush(function(injected_functions)
     -- Boolean        { }, --   A boolean constant: TRUE, false
     -- Float          { }, --   A floating point constant: 2.3e10
 
-    Identifier { fg = nord_polar_night_1 }, -- (*) Any variable name
-    Function { fg = nord_polar_night_3 },   --   Function name (also: methods for classes)
+    Identifier { Normal }, -- (*) Any variable name
+    Function { fg = nord_aurora_red },   --   Function name (also: methods for classes)
 
     Statement { fg = nord_aurora_yellow },  -- (*) Any statement
     -- Conditional    { }, --   if, then, else, endif, switch, etc.
