@@ -87,8 +87,8 @@ local theme = lush(function(injected_functions)
     Search { fg = nord_polar_night_1, bg = nord_snow_storm_1 }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     IncSearch { fg = nord_aurora_orange, reverse = true },      -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch { fg = nord_aurora_orange, reverse = true },      -- Highlighting a search pattern under the cursor (see 'hlsearch')
-    Substitute { fg = nord_aurora_red, reverse = true },     -- |:substitute| replacement text highlighting
-    ScrollView { fg = nord_polar_night_2, reverse = true }, -- scrollbar
+    Substitute { fg = nord_aurora_red, reverse = true },        -- |:substitute| replacement text highlighting
+    ScrollView { fg = nord_polar_night_2, reverse = true },     -- scrollbar
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM       { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn   { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
@@ -112,7 +112,7 @@ local theme = lush(function(injected_functions)
     CursorLineNr { fg = nord_polar_night_4 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- CursorLineFold { }, -- Like FoldColumn when 'cursorline' is set for the cursor line
     -- CursorLineSign { }, -- Like SignColumn when 'cursorline' is set for the cursor line
-    MatchParen { reverse = true }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    MatchParen { bg = nord_aurora_orange, underline },   -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg        { }, -- 'showmode' message (e.g., "-- INSERT -- ")
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
