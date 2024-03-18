@@ -86,7 +86,7 @@ local theme = lush(function(injected_functions)
     -- VisualNOS { Visual },                                       -- Visual mode selection when vim is "Not Owning the Selection".
     Search { fg = nord_polar_night_1, bg = nord_aurora_purple }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     IncSearch { fg = nord_aurora_orange, reverse = true },       -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
-    CurSearch { fg = nord_aurora_orange, reverse = true },       -- Highlighting a search pattern under the cursor (see 'hlsearch')
+    CurSearch { fg = nord_aurora_red, reverse = true },       -- Highlighting a search pattern under the cursor (see 'hlsearch')
     Substitute { fg = nord_aurora_orange, reverse = true },      -- |:substitute| replacement text highlighting
     ScrollView { fg = nord_polar_night_2, reverse = true },      -- scrollbar
     -- lCursor        { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
