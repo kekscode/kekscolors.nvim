@@ -142,7 +142,7 @@ local theme = lush(function(injected_functions)
     -- TabLineSel     { }, -- Tab pages line, active tab page label
     Title { Normal },                                           -- Titles for output from ":set all", ":autocmd" etc.
     Visual { fg = nord_polar_night_1, bg = nord_aurora_green }, -- Visual mode selection
-    -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
+    VisualNOS { Visual },                                       -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg { fg = nord_aurora_orange },                     -- Warning messages
     Whitespace { fg = nord_polar_night_1 },                     -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator { fg = nord_frost_4 },                         -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
